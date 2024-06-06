@@ -6,6 +6,9 @@ The goal of this project is to decrypt dynamically generated content received fr
 Technical Design Details:
 This web service application is developed in Java and employs encryption and decryption techniques such as base64 encoding, SHA26 encryption, ASCII, ASCII mutation, HEX modification, bitwise manipulations, and scrambled texts with base64 encoding. The project utilizes the strategy design pattern to manage the decryption process effectively. Additionally, a resolver pattern was initially used but later removed from the design.
 
+Unit Testing:
+The unit testing uses JUnit4 Mock mechanism to verify and validate different encryption method implementations as well as verify the controller flow.
+
 API Details:
 Method: GET
 API http://{domain}/v1/pulley/{userId}
