@@ -10,10 +10,14 @@ Unit Testing:
 The unit testing uses JUnit4 Mock mechanism to verify and validate different encryption method implementations as well as verify the controller flow.
 
 API Details:
-Method: GET
+
+Method: GET 
+Description: Get the encoded response and encoding method given the user Id for the next challenges.
+
 API http://{domain}/v1/pulley/{userId}
 
-Response
+Response:
+{
     String challenger
     String encryptedPath
     String encryptionMethod
@@ -21,5 +25,15 @@ Response
     String hint;
     String instructions
     int level
+}
+
+HTTP Codes: 
+200 Success
+400 Bad Request
+404 Resource not found
+500 Internal Server Error
+
+
+
 
 
